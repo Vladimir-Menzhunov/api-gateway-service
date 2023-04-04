@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package two_service;
+
+service TwoService {
+  rpc RunTwoMethod (TwoRequest) returns (TwoResponse) {}
+}
+
+message TwoRequest {
+  string str = 1;
+}
+
+message TwoResponse {
+  string str = 1;
+}
